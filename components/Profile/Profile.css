@@ -1,69 +1,73 @@
-.about {
-  display: flex;
-  flex-direction: row;
-  /* background-color: rgba(102, 160, 111, 0.598); */
-  margin-top: 5px;
+@media screen and (min-width: 710px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgba(102, 160, 111, 0.598); */
+    margin-top: 5px;
+  }
+  
+  .info.left {
+    display: flex;
+    /* background-color: aqua; */
+    /* background: linear-gradient(white, #c18231, white); */
+    background: linear-gradient(#fed66d, #c18231, #fed66d);
+    /* background: linear-gradient(#c18231, #fed66d, #c18231); */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    margin-right: 2.5px;
+    width: 60%;
+    height: 50vw;
+  }
+  
+  .info.left h3 {
+    font-size: 22px;
+  }
+  
+  .info.left h3 small {
+    font-size: 10px;
+    line-height: 0.3px;
+  }
+  
+  .info {
+    border-radius: 17px;
+  }
+  
+  .info.right {
+    margin-left: 2.5px;
+    width: 40%;
+    height: 50vw;
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+  }
+  
+  .btn-contact {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 7px 15px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  
+  .btn-link {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+    cursor: pointer;
+  }
 }
 
-.info.left {
-  display: flex;
-  /* background-color: aqua; */
-  /* background: linear-gradient(white, #c18231, white); */
-  background: linear-gradient(#fed66d, #c18231, #fed66d);
-  /* background: linear-gradient(#c18231, #fed66d, #c18231); */
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 10px;
-  margin-right: 2.5px;
-  width: 60%;
-  height: 50vw;
-}
 
-.info.left h3 {
-  font-size: 22px;
-}
-
-.info.left h3 small {
-  font-size: 10px;
-  line-height: 0.3px;
-}
-
-.info {
-  border-radius: 17px;
-}
-
-.info.right {
-  margin-left: 2.5px;
-  width: 40%;
-  height: 50vw;
-}
-
-.contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 70%;
-}
-
-.btn-contact {
-  background-color: #000000;
-  color: #ffffff;
-  border: none;
-  border-radius: 15px;
-  padding: 7px 15px;
-  font-size: 10px;
-  cursor: pointer;
-}
-
-.btn-link {
-  background-color: #ffffff;
-  color: #000000;
-  border: none;
-  border-radius: 15px;
-  width: 24px;
-  height: 24px;
-  font-size: 10px;
-  cursor: pointer;
-}

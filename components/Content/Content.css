@@ -1,0 +1,39 @@
+@media screen and (min-width: 710px) {
+    .contents {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3px;
+        margin-left: -3px;
+        margin-right: -3px;
+    }
+    
+    .content--card {
+        width: 350px !important;
+        height: 350px !important;
+        background-repeat: no-repeat;
+        background-size: 350px 350px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border-radius: 17px;
+        margin: 1.5px;
+    }
+    
+    .card--bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin-top: 15px;
+        color: white;
+    }
+    
+    .card--bar button {
+        background: white;
+        border: none;
+        color: black;
+        font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 100px;
+    }
+}
