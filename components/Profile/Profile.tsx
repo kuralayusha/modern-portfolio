@@ -1,5 +1,5 @@
-import profilePhoto from "../../public/images/profile-photo.png"
-import Image from "next/image"
+import profilePhoto from '../../public/images/profile-photo.png'
+import Image from 'next/image'
 
 function Profile() {
   return (
@@ -7,14 +7,14 @@ function Profile() {
       <div className="info left">
         <div>
           <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ut nobis
-            provident.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            In ut nobis provident.
           </h3>
 
           <small>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
-            dignissimos dolore nobis esse voluptatum distinctio labore ipsum
-            harum id.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Ut, dignissimos dolore nobis esse voluptatum distinctio
+            labore ipsum harum id.
           </small>
         </div>
         <div className="contact">
@@ -29,7 +29,8 @@ function Profile() {
         src={profilePhoto}
         alt="profil p"
         className="info right"
-        // width="200"
+        width={100}
+        height={100}
       />
     </div>
   )
