@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import arrow from '../../public/icons/arrow.svg'
 
 type contentProps = {
   data: any
@@ -23,7 +24,9 @@ function Content({ data }: contentProps) {
               <small>{project.description}</small>
             </div>
             <Link href={project.link} target="_blank">
-              <button>.</button>
+              <button>
+                <Image src={arrow} alt="arrow" width={10}></Image>
+              </button>
             </Link>
           </div>
         </div>
