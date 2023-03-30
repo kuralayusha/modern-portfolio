@@ -1,5 +1,10 @@
-import profilePhoto from '../../public/images/profile-photo.png'
 import Image from 'next/image'
+
+import profilePhoto from '../../public/images/profile-photo.png'
+import gitHub from '../../public/icons/github.svg'
+import linkedIn from '../../public/icons/linkedin.svg'
+import twitter from '../../public/icons/twitter.svg'
+import instagram from '../../public/icons/instagram.svg'
 
 function Profile() {
   return (
@@ -11,18 +16,27 @@ function Profile() {
             In ut nobis provident.
           </h3>
 
-          <small>
+          <h4>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Ut, dignissimos dolore nobis esse voluptatum distinctio
             labore ipsum harum id.
-          </small>
+          </h4>
         </div>
         <div className="contact">
           <button className="btn-contact">Contact Me</button>
-          <button className="btn-link">IG</button>
-          <button className="btn-link">FB</button>
-          <button className="btn-link">LI</button>
-          <button className="btn-link">TW</button>
+
+          <button className="btn-social">
+            <Image src={gitHub} alt="gitHub" width={24} />
+          </button>
+          <button className="btn-social">
+            <Image src={instagram} alt="instagram" width={24} />
+          </button>
+          <button className="btn-social">
+            <Image src={twitter} alt="twitter" width={24} />
+          </button>
+          <button className="btn-social">
+            <Image src={linkedIn} alt="linkedIn" width={24} />
+          </button>
         </div>
       </div>
       <Image
