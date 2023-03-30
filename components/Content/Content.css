@@ -2,13 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 3px;
-    margin-left: -3px;
-    margin-right: -3px;
+    /* margin-left: -3px;
+    margin-right: -3px; */
+    justify-content: center;
 }
 
 .content--card {
-    width: 49% !important;
-    height: 50vw !important;
+    width: 49.03% !important;
+    height: 49.03vw !important;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -18,22 +19,43 @@
     margin: 1.5px;
 }
 
-.card--bar {
+.card--info {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
+    height: 70%;
     margin-top: 15px;
     color: white;
+    font-size: calc(10px + 1vw);
 }
 
-.card--bar button {
+.card--info button {
     background: white;
     border: none;
     color: black;
     font-size: 10px;
     padding: 5px 10px;
     border-radius: 100px;
+}
+
+.bar-left small {
+    display: none;
+}
+
+@media screen and (min-width: 571px) {
+    .content--card {
+        width: 32.8% !important;
+        height: 32.8vw !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border-radius: 17px;
+        margin: 1.5px;
+    }
 }
 
 @media screen and (min-width: 710px) {
@@ -57,21 +79,49 @@
         margin: 1.5px;
     }
     
-    .card--bar {
+    .card--info {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         width: 90%;
+        height: 90px;
         margin-top: 15px;
         color: white;
+        font-size: 16px;
     }
     
-    .card--bar button {
+    .card--info button {
         background: white;
         border: none;
         color: black;
         font-size: 10px;
         padding: 5px 10px;
         border-radius: 100px;
+    }
+
+    .bar-left small {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .content--card {
+        width: 32.8% !important;
+        height: 32.8vw !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border-radius: 17px;
+        margin: 1.5px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .content--card {
+        width: 337px !important;
+        height: 337px !important;
     }
 }

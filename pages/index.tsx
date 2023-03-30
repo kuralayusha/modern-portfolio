@@ -41,9 +41,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <NavBar />
-        <Profile />
-        <Content data={data} />
+        <div className="container">
+          <NavBar />
+          <Profile />
+          <Content data={data} />
+        </div>
       </main>
     </>
   )

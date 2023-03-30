@@ -17,7 +17,7 @@ function Content({ data }: contentProps) {
             backgroundImage: `url(${project.image[0]})`,
           }}
         >
-          <div className="card--bar">
+          <div className="card--info">
             <div className="bar-left">
               <h4>{project.name}</h4>
               <small>{project.description}</small>
