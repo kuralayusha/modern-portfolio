@@ -1,5 +1,5 @@
 import Link from "next/link"
-
+import { useState } from "react"
 import Image from "next/image"
 
 import profilePhoto from "../../public/images/profile-photo.png"
@@ -9,10 +9,14 @@ import twitter from "../../public/icons/twitter.svg"
 import instagram from "../../public/icons/instagram.svg"
 import contact from "@/pages/contact"
 
-function Profile() {
+type Props = {
+  highLight: boolean
+}
+
+function Profile({ highLight }: Props) {
   return (
     <div className="about">
-      <div className="info left">
+      <div className={highLight ? "info left highlight" : "info left"}>
         <div>
           <h3>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In ut nobis

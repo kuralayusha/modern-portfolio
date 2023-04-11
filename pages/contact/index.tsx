@@ -1,6 +1,8 @@
 import React, { useRef } from "react"
 import emailjs from "@emailjs/browser"
 import Image from "next/image"
+import { useState } from "react"
+import Link from "next/link"
 
 import close from "../../public/icons/close.svg"
 import gitHub from "../../public/icons/github.svg"
@@ -9,10 +11,13 @@ import twitter from "../../public/icons/twitter.svg"
 import instagram from "../../public/icons/instagram.svg"
 
 function Contact() {
+  const [mailStatus, setMailStatus] = useState<"success" | "error">()
+  const [loading, setLoading] = useState<boolean>(false)
   const form = useRef<HTMLFormElement | null>(null)
 
   const sendEmail = (e: React.ChangeEvent<any>) => {
     e.preventDefault()
+    setLoading(true)
     if (!form.current) {
       return
     }
@@ -26,23 +31,24 @@ function Contact() {
       )
       .then(
         (result) => {
-          // console.log(result.text)
+          setMailStatus("success")
+          setLoading(false)
+          e.target.reset()
         },
         (error) => {
-          // console.log(error.text)
+          setMailStatus("error")
+          setLoading(false)
+          e.target.reset()
         }
       )
-    e.target.reset()
-  }
-
-  function handleGoBack() {
-    window.location.href = "/"
   }
   return (
     <div className="contact--container">
-      <button className="to--home" onClick={handleGoBack}>
-        <Image className="close--icon" src={close} alt="close" width={20} />
-      </button>
+      <Link href="/">
+        <button className="to--home">
+          <Image className="close--icon" src={close} alt="close" width={20} />
+        </button>
+      </Link>
 
       <div className="socials">
         <button className="btn-social">
@@ -95,6 +101,25 @@ function Contact() {
         />
         <button type="submit">Send</button>
       </form>
+      {mailStatus === "success" ? (
+        <div className="mail--status">
+          <p>Mail sent successfully</p>
+          <Link href="/">
+            <button className="status-btn">Close</button>
+          </Link>
+        </div>
+      ) : (
+        mailStatus === "error" && (
+          <div className="mail--status">
+            <p>Mail not sent</p>
+
+            <Link href="/">
+              <button className="status-btn">Close</button>
+            </Link>
+          </div>
+        )
+      )}
+      {loading && <div className="lds-dual-ring"></div>}
     </div>
   )
 }

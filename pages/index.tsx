@@ -27,6 +27,8 @@ export type ProjectData = {
 export default function Home() {
   const [data, setData] = useState(projectsData)
   const [sendMail, setSendMail] = useState(false)
+  const [highLight, setHighLight] = useState<boolean>(false)
+
   return (
     <>
       <Head>
@@ -37,8 +39,8 @@ export default function Home() {
       </Head>
       <main>
         <div className="container">
-          <NavBar />
-          <Profile />
+          <NavBar setHighLight={setHighLight} />
+          <Profile highLight={highLight} />
           <Content data={data} />
         </div>
       </main>

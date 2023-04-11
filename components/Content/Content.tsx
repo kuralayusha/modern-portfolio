@@ -38,9 +38,9 @@ function Content({ data }: contentProps) {
 
   return (
     <section
-      id="content"
+      id="works"
       className="contents"
-      onMouseMove={(e) => handleMouseMoveTwo(e)}
+      // onMouseMove={(e) => handleMouseMoveTwo(e)}
     >
       {data.map((project: any) => (
         <div
@@ -50,7 +50,7 @@ function Content({ data }: contentProps) {
           style={{
             backgroundImage: `url(${project.image[0]})`,
           }}
-          onMouseMove={(e) => handleMouseMove(e)}
+          // onMouseMove={(e) => handleMouseMove(e)}
         >
           <div className="card--info">
             <div className="bar-left">
