@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import profilePhoto from '../../public/images/profile-photo.png'
+import Link from "next/link"
+import Image from "next/image"
+import profilePhoto from "../../public/images/profile-photo.png"
 
 function NavBar() {
   return (
@@ -26,7 +26,7 @@ function NavBar() {
           <Link href="/">Contact</Link>
         </li>
         <li>
-          <Link href="/">Works</Link>
+          <Link href="#content">Works</Link>
         </li>
       </ul>
     </nav>

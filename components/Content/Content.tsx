@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import arrow from '../../public/icons/arrow.svg'
+import Image from "next/image"
+import Link from "next/link"
+import arrow from "../../public/icons/arrow.svg"
 
 type contentProps = {
   data: any
@@ -14,15 +14,15 @@ function Content({ data }: contentProps) {
     const x = e.clientX - rect.left
     const y = e.clientY - rect.top
 
-    target.style.setProperty('--mouse-x', `${x}px`)
-    target.style.setProperty('--mouse-y', `${y}px`)
+    target.style.setProperty("--mouse-x", `${x}px`)
+    target.style.setProperty("--mouse-y", `${y}px`)
   }
 
   // in this function, I want to get the id of the card that is being hovered
   // and then apply the hover effects to the nearby cards
   function handleMouseMoveTwo(e: any) {
     // if there is no card being hovered, then return
-    if (e.target.id === '') {
+    if (e.target.id === "") {
       return
     } else {
       for (const card of e.currentTarget.children) {
@@ -30,14 +30,15 @@ function Content({ data }: contentProps) {
           x = e.clientX - rect.left,
           y = e.clientY - rect.top
 
-        card.style.setProperty('--mouse-x', `${x}px`)
-        card.style.setProperty('--mouse-y', `${y}px`)
+        card.style.setProperty("--mouse-x", `${x}px`)
+        card.style.setProperty("--mouse-y", `${y}px`)
       }
     }
   }
 
   return (
-    <div
+    <section
+      id="content"
       className="contents"
       onMouseMove={(e) => handleMouseMoveTwo(e)}
     >
@@ -64,7 +65,7 @@ function Content({ data }: contentProps) {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   )
 }
 
