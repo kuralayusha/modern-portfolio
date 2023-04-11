@@ -1,10 +1,13 @@
-import Image from 'next/image'
+import Link from "next/link"
 
-import profilePhoto from '../../public/images/profile-photo.png'
-import gitHub from '../../public/icons/github.svg'
-import linkedIn from '../../public/icons/linkedin.svg'
-import twitter from '../../public/icons/twitter.svg'
-import instagram from '../../public/icons/instagram.svg'
+import Image from "next/image"
+
+import profilePhoto from "../../public/images/profile-photo.png"
+import gitHub from "../../public/icons/github.svg"
+import linkedIn from "../../public/icons/linkedin.svg"
+import twitter from "../../public/icons/twitter.svg"
+import instagram from "../../public/icons/instagram.svg"
+import contact from "@/pages/contact"
 
 function Profile() {
   return (
@@ -12,18 +15,20 @@ function Profile() {
       <div className="info left">
         <div>
           <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            In ut nobis provident.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ut nobis
+            provident.
           </h3>
 
           <h4>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Ut, dignissimos dolore nobis esse voluptatum distinctio
-            labore ipsum harum id.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+            dignissimos dolore nobis esse voluptatum distinctio labore ipsum
+            harum id.
           </h4>
         </div>
         <div className="contact">
-          <button className="btn-contact">Contact Me</button>
+          <Link href="/contact">
+            <button className="btn-contact">Contact Me</button>
+          </Link>
 
           <button className="btn-social">
             <Image src={gitHub} alt="gitHub" width={24} />
