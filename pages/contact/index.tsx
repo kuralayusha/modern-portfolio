@@ -8,7 +8,7 @@ import linkedIn from "../../public/icons/linkedin.svg"
 import twitter from "../../public/icons/twitter.svg"
 import instagram from "../../public/icons/instagram.svg"
 
-function contact() {
+function Contact() {
   const form = useRef<HTMLFormElement | null>(null)
 
   const sendEmail = (e: React.ChangeEvent<any>) => {
@@ -99,4 +99,4 @@ function contact() {
   )
 }
 
-export default contact
+export default Contact
