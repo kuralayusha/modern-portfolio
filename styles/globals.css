@@ -15,6 +15,24 @@ body,
   scroll-behavior: smooth !important;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (min-width: 1020px) {
   .container {
     width: 1020px;

@@ -1,9 +1,10 @@
 .contents {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 3px;
-  justify-content: center;
-  background-color: #f5f5f5;
+  margin-top: 10px;
+  justify-content: space-between;
+  padding: 0 3px;
 }
 
 .contents:hover > .content--card::after {
@@ -11,20 +12,19 @@
 }
 
 .content--card {
-  width: 49.03% !important;
-  height: 49.03vw !important;
+  width: 49% !important;
+  height: 47.7vw !important;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   border-radius: 17px;
-  margin: 1.5px;
+  margin-bottom: 10px;
 
-  /* box-shadow: 0 0 1.5px rgb(0, 0, 0); */
+  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.2);
 
   position: relative;
-  /* border: 1px solid rgba(49, 49, 49, 0.582); */
   z-index: 30;
 }
 
@@ -99,15 +99,14 @@
 
 @media screen and (min-width: 571px) {
   .content--card {
-    width: 32.8% !important;
-    height: 32.8vw !important;
+    width: 32% !important;
+    height: 31vw !important;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     border-radius: 17px;
-    margin: 1.5px;
   }
 }
 
@@ -115,21 +114,21 @@
   .contents {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 3px;
+    margin-top: 10px;
     margin-left: -3px;
     margin-right: -3px;
   }
 
   .content--card {
-    width: 49.5% !important;
-    height: 50vw !important;
+    width: 49.2% !important;
+    height: 47vw !important;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     border-radius: 17px;
-    margin: 1.5px;
+    margin-bottom: 10px;
   }
 
   .card--info {
@@ -168,13 +167,14 @@
     align-items: flex-start;
     justify-content: center;
     border-radius: 17px;
-    margin: 1.5px;
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1020px) {
   .content--card {
-    width: 337px !important;
-    height: 337px !important;
+    width: 331px !important;
+    height: 331px !important;
+    margin-bottom: 10px;
   }
 }
