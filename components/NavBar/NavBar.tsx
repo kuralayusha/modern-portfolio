@@ -11,7 +11,7 @@ function NavBar({ setHighLight }: Props) {
     setHighLight(true)
     setTimeout(() => {
       setHighLight(false)
-    }, 9000)
+    }, 5000)
   }
   return (
     <nav id="nav">
