@@ -1,5 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
+import { useState, useEffect } from "react"
+
 import profilePhoto from "../../public/images/profile-photo.png"
 
 type Props = {
@@ -7,6 +9,21 @@ type Props = {
 }
 
 function NavBar({ setHighLight }: Props) {
+  const [scroll, setScroll] = useState<boolean>(false)
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  })
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScroll(true)
+    } else {
+      setScroll(false)
+    }
+  }
+
   function highlightAbout() {
     setHighLight(true)
     setTimeout(() => {
@@ -14,7 +31,7 @@ function NavBar({ setHighLight }: Props) {
     }, 5000)
   }
   return (
-    <nav id="nav">
+    <nav id="nav" className={scroll ? "nav active" : "nav"}>
       <div className="logo">
         <Image
           src={profilePhoto}

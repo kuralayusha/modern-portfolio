@@ -1,4 +1,4 @@
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,9 +10,14 @@ nav {
   padding: 0 5px;
   border-radius: 0 0 10px 10px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
 
   max-width: 1020px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -35,22 +40,9 @@ nav h4 {
   cursor: default;
 }
 
-/* nav h4::before {
-  content: "";
-  font-size: 10px;
-  background-color: rgb(0, 0, 0);
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 10px;
-  left: 5px;
-  border-radius: 50%;
-} */
-
 #nav ul {
   display: flex;
   list-style: none;
-  /* background-color: brown; */
   padding: 0;
   margin: 0;
   text-align: center;
