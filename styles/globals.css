@@ -5,28 +5,27 @@
   padding: 0;
 }
 
-main {
-  padding: 5px;
-}
-
 html,
 body,
 * {
   scroll-behavior: smooth !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+main {
+  padding: 5px;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
-body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 .container {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
