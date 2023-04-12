@@ -26,16 +26,16 @@ function NavBar({ setHighLight }: Props) {
         <h4>Kurley</h4>
       </div>
       <ul>
-        <li>
+        <li onClick={() => setHighLight(false)}>
           <Link href="/">Home</Link>
         </li>
         <li onClick={highlightAbout}>
           <Link href="/">About</Link>
         </li>
-        <li>
+        <li onClick={() => setHighLight(false)}>
           <Link href="/contact">Contact</Link>
         </li>
-        <li>
+        <li onClick={() => setHighLight(false)}>
           <Link href="#works">Works</Link>
         </li>
       </ul>

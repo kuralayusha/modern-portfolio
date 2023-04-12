@@ -52,6 +52,7 @@
 .info.left h3 {
   max-width: 550px;
   font-size: 22px;
+  cursor: default;
 }
 
 .info.left h4 {
@@ -59,6 +60,7 @@
   max-width: 550px;
   font-weight: 300;
   font-size: 12px;
+  cursor: default;
 }
 
 .info.right {
