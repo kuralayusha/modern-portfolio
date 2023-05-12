@@ -41,7 +41,7 @@ function NavBar({ setHighLight }: Props) {
           width={30}
           height={30}
         ></Image>
-        <h4>Kurley</h4>
+        <h4>Kuralay Yusha</h4>
       </div>
       <ul>
         <li onClick={() => setHighLight(false)}>
