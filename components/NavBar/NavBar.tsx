@@ -1,8 +1,9 @@
-import Link from "next/link"
-import Image from "next/image"
-import { useState, useEffect } from "react"
+import Link from 'next/link'
+import Image from 'next/image'
+import { useState, useEffect } from 'react'
 
-import profilePhoto from "../../public/images/profile-photo.png"
+import myFoto from '../../public/images/myFoto.jpg'
+import profilePhoto from '../../public/images/profile-photo.png'
 
 type Props = {
   setHighLight: (highLight: boolean) => void
@@ -12,8 +13,8 @@ function NavBar({ setHighLight }: Props) {
   const [scroll, setScroll] = useState<boolean>(false)
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   })
 
   const handleScroll = () => {
@@ -31,10 +32,10 @@ function NavBar({ setHighLight }: Props) {
     }, 5000)
   }
   return (
-    <nav id="nav" className={scroll ? "nav active" : "nav"}>
+    <nav id="nav" className={scroll ? 'nav active' : 'nav'}>
       <div className="logo">
         <Image
-          src={profilePhoto}
+          src={myFoto}
           alt="profil p"
           className="profile-photo"
           width={30}

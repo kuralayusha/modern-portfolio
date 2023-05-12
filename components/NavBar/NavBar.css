@@ -9,7 +9,7 @@
   z-index: 100;
   padding: 0 5px;
   border-radius: 0 0 10px 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: #f3f8f4;
 
   max-width: 1020px;
 
@@ -17,7 +17,7 @@
 }
 
 .nav.active {
-  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 10px 1px #2631438c;
 }
 
 .logo {
@@ -62,7 +62,7 @@ nav h4 {
 }
 
 #nav ul li a:hover {
-  color: #ffb300;
+  color: #8bb8ff;
 }
 
 @media screen and (min-width: 710px) {

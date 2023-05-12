@@ -18,6 +18,7 @@ body,
 
 main {
   padding: 5px;
+  background: #00194244;
 }
 
 body::-webkit-scrollbar {

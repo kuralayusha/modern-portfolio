@@ -8,7 +8,7 @@
 .info.left {
   margin-top: 3px;
   display: flex;
-  background: linear-gradient(135deg, #ffeec7, #ffd77a, #ffb300);
+  background: linear-gradient(135deg, #f3f8f4, #263143);
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
@@ -20,7 +20,7 @@
 }
 
 .info.left.highlight {
-  background: linear-gradient(135deg, #ffffff, #ffd77b, #ffa600);
+  background: linear-gradient(135deg, #f3f8f4, #263143);
   background-size: 400% 400%;
   animation: gradient 2.5s ease infinite, transY 1s ease infinite;
 }
@@ -104,7 +104,7 @@
 
   .info.left {
     display: flex;
-    background: linear-gradient(135deg, #ffeec7, #ffd77a, #ffb300);
+    background: linear-gradient(135deg,  #f3f8f4, #263143);
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;

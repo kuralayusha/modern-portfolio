@@ -1,13 +1,14 @@
-import Link from "next/link"
-import { useState } from "react"
-import Image from "next/image"
+import Link from 'next/link'
+import { useState } from 'react'
+import Image from 'next/image'
 
-import profilePhoto from "../../public/images/profile-photo.png"
-import gitHub from "../../public/icons/github.svg"
-import linkedIn from "../../public/icons/linkedin.svg"
-import twitter from "../../public/icons/twitter.svg"
-import instagram from "../../public/icons/instagram.svg"
-import contact from "@/pages/contact"
+import profilePhoto from '../../public/images/profile-photo.png'
+import myFoto from '../../public/images/myFoto.jpg'
+import gitHub from '../../public/icons/github.svg'
+import linkedIn from '../../public/icons/linkedin.svg'
+import twitter from '../../public/icons/twitter.svg'
+import instagram from '../../public/icons/instagram.svg'
+import contact from '@/pages/contact'
 
 type Props = {
   highLight: boolean
@@ -16,17 +17,21 @@ type Props = {
 function Profile({ highLight }: Props) {
   return (
     <div className="about">
-      <div className={highLight ? "info left highlight" : "info left"}>
+      <div
+        className={highLight ? 'info left highlight' : 'info left'}
+      >
         <div>
           <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ut nobis
-            provident.
+            Hi! my name is Yusha and I am a computer engineering
+            student.
           </h3>
 
           <h4>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
-            dignissimos dolore nobis esse voluptatum distinctio labore ipsum
-            harum id.
+            For me, frontend development is the most satisfying thing
+            to do. I am currently looking for a job because being a
+            part of a team that shares the same passion as me is my
+            primary goal. Please don't hesitate to contact me on any
+            topic. I hope you enjoy my projects.
           </h4>
         </div>
         <div className="contact">
@@ -49,7 +54,7 @@ function Profile({ highLight }: Props) {
         </div>
       </div>
       <Image
-        src={profilePhoto}
+        src={myFoto}
         alt="profil p"
         className="info right"
         width={100}
