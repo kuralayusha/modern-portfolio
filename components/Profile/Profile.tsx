@@ -30,8 +30,8 @@ function Profile({ highLight }: Props) {
             For me, frontend development is the most satisfying thing
             to do. I am currently looking for a job because being a
             part of a team that shares the same passion as me is my
-            primary goal. Please don't hesitate to contact me on any
-            topic. I hope you enjoy my projects.
+            primary goal. Please don&apos;t hesitate to contact me on
+            any topic. I hope you enjoy my projects.
           </h4>
         </div>
         <div className="contact">
