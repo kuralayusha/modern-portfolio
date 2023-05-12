@@ -53,13 +53,9 @@ function Profile({ highLight }: Props) {
           </button>
         </div>
       </div>
-      <Image
-        src={myFoto}
-        alt="profil p"
-        className="info right"
-        width={100}
-        height={100}
-      />
+
+      <Image src={myFoto} alt="profil p" className="info right" />
+      <img src={myFoto.src} className="info right" />
     </div>
   )
 }
