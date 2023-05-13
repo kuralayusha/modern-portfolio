@@ -38,19 +38,33 @@ function Profile({ highLight }: Props) {
           <Link href="/contact">
             <button className="btn-contact">Contact Me</button>
           </Link>
-
           <button className="btn-social">
-            <Image src={gitHub} alt="gitHub" width={24} />
+            <Link
+              href="https://github.com/kuralayusha"
+              target="_blank"
+            >
+              <Image src={gitHub} alt="gitHub" width={24} />
+            </Link>
           </button>
           <button className="btn-social">
-            <Image src={instagram} alt="instagram" width={24} />
+            <Link
+              href="https://www.linkedin.com/in/yusha-kuralay-6abb161b0/?originalSubdomain=tr"
+              target="_blank"
+            >
+              <Image src={linkedIn} alt="linkedIn" width={24} />
+            </Link>
           </button>
           <button className="btn-social">
+            <Link
+              href="https://www.instagram.com/kuralayusha/"
+              target="_blank"
+            >
+              <Image src={instagram} alt="instagram" width={24} />
+            </Link>
+          </button>
+          {/* <button className="btn-social">
             <Image src={twitter} alt="twitter" width={24} />
-          </button>
-          <button className="btn-social">
-            <Image src={linkedIn} alt="linkedIn" width={24} />
-          </button>
+          </button> */}
         </div>
       </div>
       <Image src={myFoto} alt="profil p" className="info right" />

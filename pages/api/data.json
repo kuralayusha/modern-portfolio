@@ -3,64 +3,63 @@
     "id": 9,
     "name": "Perfect Pair",
     "image": ["/images/love-test-ss-1.jpg"],
-    "description": "I created this project in a hurry.",
+    "description": "A love calculator app.",
     "link": "https://love-test-wheat.vercel.app"
   },
   {
     "id": 3,
     "name": "Kanban Task Manager",
     "image": ["/images/kanban-ss-4.jpg"],
-    "description": "This project greatly improved many of my skills.",
+    "description": "The best way to organize your tasks.",
     "link": "https://mellifluous-caramel-c4234f.netlify.app"
-  },
-  {
-    "id": 7,
-    "name": "Tic-Tac-Toe Game",
-    "image": ["/images/xox-ss-1.jpg"],
-    "description": "This was one of the first games I developed",
-    "link": "https://kuralayusha.github.io/tic-tac-toe/"
-  },
-  {
-    "id": 1,
-    "name": "Countries Website",
-    "image": ["/images/country-ss-2.jpg"],
-    "description": "While in the unfiltered state, you can preview ",
-    "link": "https://kuralayusha.github.io/countries/#/"
-  },
-  {
-    "id": 6,
-    "name": "Rock Paper Scissors Game",
-    "image": ["/images/rps-ss-3.jpg"],
-    "description": "You can have a fun time playing against the CPU.",
-    "link": "https://kuralayusha.github.io/rock-paper-scissors/"
-  },
-
-  {
-    "id": 4,
-    "name": "News Home Page",
-    "image": ["/images/newsHomePage-web-ss.PNG"],
-    "description": "This project was one of my first projects.",
-    "link": "https://gleaming-sorbet-e6b83c.netlify.app"
-  },
-  {
-    "id": 2,
-    "name": "IP Address Tracker",
-    "image": ["/images/ip-ss-1.jpg"],
-    "description": "I learned how to use a map extension on my site ",
-    "link": "https://kuralayusha.github.io/ip-tracker/"
   },
   {
     "id": 8,
     "name": "Portfolio Site",
     "image": ["/images/portfolio-ss-2.jpg"],
-    "description": "I designed this website to showcase my projects and",
+    "description": "My first portfolio website.",
     "link": "https://portfolio-website-ochre-theta.vercel.app"
+  },
+  {
+    "id": 7,
+    "name": "Tic-Tac-Toe Game",
+    "image": ["/images/xox-ss-1.jpg"],
+    "description": "My first game project.",
+    "link": "https://kuralayusha.github.io/tic-tac-toe/"
+  },
+  {
+    "id": 6,
+    "name": "RPS | RPSLS",
+    "image": ["/images/rps-ss-3.jpg"],
+    "description": "RPSLS is a variant of the game RPS.",
+    "link": "https://kuralayusha.github.io/rock-paper-scissors/"
+  },
+  {
+    "id": 2,
+    "name": "IP Address Tracker",
+    "image": ["/images/ip-ss-1.jpg"],
+    "description": "Find the location of any IP address.",
+    "link": "https://kuralayusha.github.io/ip-tracker/"
+  },
+  {
+    "id": 1,
+    "name": "Countries Website",
+    "image": ["/images/country-ss-2.jpg"],
+    "description": "Leanr about the world.",
+    "link": "https://kuralayusha.github.io/countries/#/"
   },
   {
     "id": 5,
     "name": "Question App",
     "image": ["/images/question-web-ss.jpg"],
-    "description": "The original version of this site ",
+    "description": "A question app to test your knowledge.",
     "link": "https://celadon-sprinkles-e3ae88.netlify.app"
+  },
+  {
+    "id": 4,
+    "name": "News Home Page",
+    "image": ["/images/newsHomePage-web-ss.PNG"],
+    "description": "A basic news home page.",
+    "link": "https://gleaming-sorbet-e6b83c.netlify.app"
   }
 ]

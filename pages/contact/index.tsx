@@ -1,17 +1,17 @@
-import React, { useRef } from "react"
-import emailjs from "@emailjs/browser"
-import Image from "next/image"
-import { useState } from "react"
-import Link from "next/link"
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+import Image from 'next/image'
+import { useState } from 'react'
+import Link from 'next/link'
 
-import close from "../../public/icons/close.svg"
-import gitHub from "../../public/icons/github.svg"
-import linkedIn from "../../public/icons/linkedin.svg"
-import twitter from "../../public/icons/twitter.svg"
-import instagram from "../../public/icons/instagram.svg"
+import close from '../../public/icons/close.svg'
+import gitHub from '../../public/icons/github.svg'
+import linkedIn from '../../public/icons/linkedin.svg'
+import twitter from '../../public/icons/twitter.svg'
+import instagram from '../../public/icons/instagram.svg'
 
 function Contact() {
-  const [mailStatus, setMailStatus] = useState<"success" | "error">()
+  const [mailStatus, setMailStatus] = useState<'success' | 'error'>()
   const [loading, setLoading] = useState<boolean>(false)
   const form = useRef<HTMLFormElement | null>(null)
 
@@ -24,19 +24,19 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_jmocyqi",
-        "template_781kv9e",
+        'service_jmocyqi',
+        'template_781kv9e',
         form.current,
-        "yveSA6FqcEOfzesg3"
+        'yveSA6FqcEOfzesg3'
       )
       .then(
         (result) => {
-          setMailStatus("success")
+          setMailStatus('success')
           setLoading(false)
           e.target.reset()
         },
         (error) => {
-          setMailStatus("error")
+          setMailStatus('error')
           setLoading(false)
           e.target.reset()
         }
@@ -46,22 +46,36 @@ function Contact() {
     <div className="contact--container">
       <Link href="/">
         <button className="to--home">
-          <Image className="close--icon" src={close} alt="close" width={20} />
+          <Image
+            className="close--icon"
+            src={close}
+            alt="close"
+            width={20}
+          />
         </button>
       </Link>
 
       <div className="socials">
         <button className="btn-social">
-          <Image src={gitHub} alt="gitHub" width={24} />
+          <Link href="https://github.com/kuralayusha" target="_blank">
+            <Image src={gitHub} alt="gitHub" width={24} />
+          </Link>
         </button>
         <button className="btn-social">
-          <Image src={instagram} alt="instagram" width={24} />
+          <Link
+            href="https://www.linkedin.com/in/yusha-kuralay-6abb161b0/?originalSubdomain=tr"
+            target="_blank"
+          >
+            <Image src={linkedIn} alt="linkedIn" width={24} />
+          </Link>
         </button>
         <button className="btn-social">
-          <Image src={twitter} alt="twitter" width={24} />
-        </button>
-        <button className="btn-social">
-          <Image src={linkedIn} alt="linkedIn" width={24} />
+          <Link
+            href="https://www.instagram.com/kuralayusha/"
+            target="_blank"
+          >
+            <Image src={instagram} alt="instagram" width={24} />
+          </Link>
         </button>
       </div>
 
@@ -101,7 +115,7 @@ function Contact() {
         />
         <button type="submit">Send</button>
       </form>
-      {mailStatus === "success" ? (
+      {mailStatus === 'success' ? (
         <div className="mail--status">
           <p>Mail sent successfully</p>
           <Link href="/">
@@ -109,7 +123,7 @@ function Contact() {
           </Link>
         </div>
       ) : (
-        mailStatus === "error" && (
+        mailStatus === 'error' && (
           <div className="mail--status">
             <p>Mail not sent</p>
 
